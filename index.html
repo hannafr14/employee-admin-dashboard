@@ -12,6 +12,33 @@
 
     </head>
     <body>
+        <main class="login-page">
+            <section class="login-card">
+                <img src="./src/assets/icons/user_security.svg" alt="" />
+                <h1>Employee Admin Dashboard</h1>
+                <p>Sign in to your account</p>
+                <form class="login-form" novalidate>
+                    <div>
+                        <label for="email">Work Email</label>
+                        <input type="email" id="email" name="email" placeholder="name@company.com" />
+                    </div>
+
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="password"/>
+                    </div>
+                    <button type="submit">Login to Dashboard</button>
+                    <div class="error-message">
+                        <img src="./src/assets/icons/warning.svg" alt="" />
+                        <strong>Validation Errors:</strong>
+                        <ul>
+                            <li>Invalid email format</li>
+                            <li>Password must contain at least 8 characters and one number</li>
+                        </ul>
+                    </div>
+                </form>
+            </section>
+        </main>
 
         <script type="module" src="./main.js"></script>
     </body>
