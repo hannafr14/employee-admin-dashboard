@@ -1,0 +1,160 @@
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 24px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.login-card > img {
+    width: 64px;
+    height: 64px;
+}
+
+.login-card > h1 {
+    color: var(--color-text-main);
+    font-size: 24px;
+    font-family: var(--font-main);
+    font-weight: var(--font-semibold);
+}
+
+.login-card > p {
+    color: var(--color-text-muted);
+    font-size: 16px;
+    font-family: var(--font-main);
+    font-weight: var(--font-regular);
+}
+
+
+.login-form {
+    width: 100%;
+    max-width: 100%;
+    padding: 18px;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-field > label {
+    color: var(--color-label);
+    font-size: 12px;
+    font-family: var(--font-main);
+    font-weight: var(--font-semibold);
+}
+
+.input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(195, 198, 215, 0.6);
+    background-color: var(--color-input-bg);
+}
+
+.input-wrap > input {
+    width: 100%;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: var(--font-main);
+    font-size: 16px;
+    color: var(--color-text-main);
+}
+
+.input-wrap > img {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.input-wrap:focus-within {
+    border-color: rgba(195, 198, 215, 0.8);
+    box-shadow: 0 0 0 3px rgba(195, 198, 215, 0.25);
+}
+
+.input-wrap > input::placeholder {
+    color: var(--color-text-soft);
+}
+
+.login-form > button {
+    width: 100%;
+    padding: 12px 23px;
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: 18px;
+    cursor: pointer;
+    font-family: var(--font-main);
+    font-weight: var(--font-semibold);
+}
+
+.login-form > button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.error-message {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: var(--color-error-bg);
+    border: 1px solid rgba(186, 26, 26, 0.25);
+    border-radius: var(--radius-sm);
+}
+
+.error-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.error-message > .error-title > img
+{
+    width: 17px;
+    height: 17px;
+}
+
+.error-message > .error-title > strong
+{
+    color: var(--color-error-dark);
+    font-size: 14px;
+    font-family: var(--font-main);
+    font-weight: var(--font-semibold);
+}
+
+.error-message > ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    list-style: none;
+    padding-left: 25px;
+}
+
+.error-message > ul > li {
+    color: var(--color-error-dark);
+    font-size: 14px;
+    font-family: var(--font-main);
+    font-weight: var(--font-regular);
+}

@@ -18,19 +18,28 @@
                 <h1>Employee Admin Dashboard</h1>
                 <p>Sign in to your account</p>
                 <form class="login-form" novalidate>
-                    <div>
+                    <div class="form-field">
                         <label for="email">Work Email</label>
-                        <input type="email" id="email" name="email" placeholder="name@company.com" />
+                        <div class="input-wrap">
+                            <img src="./src/assets/icons/email.svg" alt="" />
+                            <input type="email" id="email" name="email" placeholder="name@company.com" />
+                        </div>
                     </div>
 
-                    <div>
+                    <div class="form-field">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="password"/>
+                        <div class="input-wrap">
+                            <img src="./src/assets/icons/lock.svg" alt="" />
+                            <input type="password" id="password" name="password" placeholder="password"/>
+                            <img src="./src/assets/icons/visibility.svg" alt="" />
+                        </div>
                     </div>
                     <button type="submit">Login to Dashboard</button>
                     <div class="error-message">
-                        <img src="./src/assets/icons/warning.svg" alt="" />
-                        <strong>Validation Errors:</strong>
+                        <div class="error-title">
+                            <img src="./src/assets/icons/warning.svg" alt="" />
+                            <strong>Validation Errors:</strong>
+                        </div>
                         <ul>
                             <li>Invalid email format</li>
                             <li>Password must contain at least 8 characters and one number</li>
