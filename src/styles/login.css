@@ -116,12 +116,16 @@
 
 .error-message {
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 16px;
     background-color: var(--color-error-bg);
     border: 1px solid rgba(186, 26, 26, 0.25);
     border-radius: var(--radius-sm);
+}
+
+.error-message.is-visible {
+    display: flex;
 }
 
 .error-title {
