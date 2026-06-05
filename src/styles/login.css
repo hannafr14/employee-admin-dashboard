@@ -158,3 +158,10 @@
     font-family: var(--font-main);
     font-weight: var(--font-regular);
 }
+
+@media (max-width: 480px) {
+    .login-card > h1,
+    .login-card > p {
+        text-align: center;
+    }
+}
