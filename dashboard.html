@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Admin Dashboard</title>
+
+    <link rel="stylesheet" href="./src/styles/main.css" />
+</head>
+<body>
+    <header class="dashboard-header">
+        <h1>Employee Admin Dashboard</h1>
+        <button class="logout-button" type="button">
+            <img src="./src/assets/icons/login.svg" alt="" />
+            Logout
+        </button>
+    </header>
+    <main class="dashboard-page">
+        <section class="dashboard-intro">
+            <h2>Employee Directory</h2>
+            <p>A comprehensive list of all organization staff members.</p>
+        </section>
+        <section class="filter-panel">
+            <div class="filter-title">
+                <img src="./src/assets/icons/filter.svg" alt=""/>
+                <h2>Filter Employees</h2>
+            </div>
+            <div class="letter-filter"></div>
+        </section>
+
+        <section class="employees-grid" aria-label="Employees list"></section>
+    </main>
+</body>
+</html>
