@@ -1,5 +1,9 @@
 import { getEmployees } from "./api.js";
 
+if (localStorage.getItem("isLoggedIn") !== "true") {
+    window.location.href = "/index.html";
+}
+
 const employeesGrid = document.querySelector(".employees-grid");
 const letterFilter = document.querySelector(".letter-filter");
 

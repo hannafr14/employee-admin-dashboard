@@ -26,7 +26,7 @@ export function initializeApp() {
             if (isValidAdmin) {
                 localStorage.setItem("isLoggedIn", "true");
                 errorMessage.classList.remove("is-visible");
-                console.log("Login success");
+                window.location.href = "/dashboard.html";
             } else {
                 errorList.innerHTML = "<li>Invalid email or password</li>";
                 errorMessage.classList.add("is-visible");
