@@ -6,6 +6,12 @@ if (localStorage.getItem("isLoggedIn") !== "true") {
 
 const employeesGrid = document.querySelector(".employees-grid");
 const letterFilter = document.querySelector(".letter-filter");
+const logoutButton = document.querySelector(".logout-button");
+
+logoutButton.addEventListener("click", function () {
+    localStorage.removeItem("isLoggedIn");
+    window.location.href = "/index.html";
+});
 
 function renderLetterButtons(employees) {
     const letters = ["All", ..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
