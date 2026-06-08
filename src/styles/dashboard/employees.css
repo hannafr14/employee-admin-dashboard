@@ -16,7 +16,6 @@
     margin-bottom: 20px;
     color: var(--color-text-main);
     font-size: 18px;
-    font-family: var(--font-main);
     font-weight: var(--font-semibold);
     text-align: center;
     padding-bottom: 20px;
@@ -31,7 +30,6 @@
     display: block;
     color: var(--color-text-muted);
     font-size: 10px;
-    font-family: var(--font-main);
     font-weight: var(--font-semibold);
     text-transform: uppercase;
     letter-spacing: 0.06em;
@@ -40,7 +38,6 @@
 .employee-detail > p {
     color: var(--color-text-main);
     font-size: 14px;
-    font-family: var(--font-main);
     font-weight: var(--font-regular);
 }
 
@@ -54,4 +51,72 @@
     background-color: var(--color-surface);
     border: 6px solid var(--color-surface);
     box-shadow: 0 4px 12px rgba(15, 23, 42, 0.16);
+}
+
+@media (max-width: 1200px) {
+    .employees-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .employees-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .employees-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .employee-card {
+        display: grid;
+        grid-template-columns: 72px 1fr;
+        column-gap: 14px;
+        min-height: auto;
+        padding: 14px;
+    }
+
+    .employee-avatar {
+        grid-row: 1 / span 6;
+        width: 68px;
+        height: 68px;
+        margin: 0;
+        border-width: 4px;
+    }
+
+    .employee-name {
+        margin-bottom: 8px;
+        padding-bottom: 0;
+        border-bottom: none;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .employee-detail {
+        display: flex;
+        gap: 4px;
+        margin-top: 4px;
+    }
+
+    .employee-detail > span {
+        font-size: 14px;
+        font-weight: var(--font-regular);
+        text-transform: none;
+        letter-spacing: 0;
+    }
+
+    .employee-detail > span::after {
+        content: ":";
+    }
+
+    .employee-detail > p {
+        word-break: break-word;
+    }
+
+    .employee-detail:first-of-type > p {
+        color: var(--color-primary);
+    }
 }

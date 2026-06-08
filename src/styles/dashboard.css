@@ -17,7 +17,6 @@
 .dashboard-page > .dashboard-intro > h2 {
     color: var(--color-text-main);
     font-size: 36px;
-    font-family: var(--font-main);
     font-weight: var(--font-semibold);
     line-height: 1.2;
 }
@@ -26,6 +25,23 @@
     margin-top: 8px;
     color: var(--color-text-muted);
     font-size: 16px;
-    font-family: var(--font-main);
     font-weight: var(--font-regular);
+}
+
+@media (max-width: 480px) {
+    .dashboard-page {
+        padding: 24px 16px;
+    }
+
+    .dashboard-page > .dashboard-intro {
+        margin-bottom: 24px;
+    }
+
+    .dashboard-page > .dashboard-intro > h2 {
+        font-size: 28px;
+    }
+
+    .dashboard-intro > p {
+        font-size: 14px;
+    }
 }
