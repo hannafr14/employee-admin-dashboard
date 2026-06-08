@@ -1,9 +1,9 @@
-export async function checkAdminLogin(email, password) {
+export function checkAdminLogin(email, password) {
     try {
-        const response = await fetch("./db/credentials.json");
-        const data = await response.json();
+        const adminEmail = import.meta.env.VITE_ADMIN_EMAIL;
+        const adminPassword = import.meta.env.VITE_ADMIN_PASSWORD;
 
-        return email === data.admin.login && password === data.admin.password;
+        return email === adminEmail && password === adminPassword;
     } catch(error) {
         console.error("Failed to check admin login:", error);
         return false;

@@ -1,5 +1,5 @@
 export const loginSchema = {
-    async validate(data) {
+    validate(data) {
         const errors = [];
 
         if (!data.email) {
