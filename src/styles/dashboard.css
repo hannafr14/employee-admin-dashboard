@@ -1,41 +1,7 @@
-.dashboard-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 32px;
-    background-color: var(--color-input-bg);
-    box-shadow: 0 1px 4px rgba(15, 23, 42, 0.08);
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-.dashboard-header > h1 {
-    color: var(--color-primary-dark);
-    font-size: 24px;
-    font-family: var(--font-main);
-    font-weight: var(--font-semibold);
-}
-
-.dashboard-header > button {
-    display: flex;
-    align-items: center;
-    padding: 8px 16px;
-    gap: 4px;
-    color: var(--color-text-muted);
-    background-color: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-sm);
-    font-size: 12px;
-    cursor: pointer;
-    font-family: var(--font-main);
-    font-weight: var(--font-semibold);
-}
-
-.dashboard-header > button > img {
-    width: 14px;
-    height: 14px;
-}
+@import "./dashboard/header.css";
+@import "./dashboard/filter.css";
+@import "./dashboard/employees.css";
+@import "./dashboard/empty-state.css";
 
 .dashboard-page {
     width: 100%;
@@ -62,61 +28,4 @@
     font-size: 16px;
     font-family: var(--font-main);
     font-weight: var(--font-regular);
-}
-
-.filter-panel {
-    padding: 48px 24px;
-    background-color: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-lg);
-    margin-bottom: 32px;
-}
-.filter-panel > .filter-title {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 28px;
-}
-
-.filter-title > img {
-    width: 18px;
-    height: 12px;
-}
-
-.filter-title > h2 {
-    color: var(--color-text-main);
-    font-size: 18px;
-    font-family: var(--font-main);
-    font-weight: var(--font-semibold);
-}
-
-.letter-filter {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-}
-
-.letter-filter > button {
-    min-width: 40px;
-    height: 40px;
-    padding: 0 12px;
-    color: var(--color-text-muted);
-    background-color: var(--color-input-bg);
-    border: none;
-    border-radius: var(--radius-md);
-    font-size: 12px;
-    font-family: var(--font-main);
-    font-weight: var(--font-semibold);
-    cursor: pointer;
-}
-
-.letter-filter > button.is-active {
-    color: var(--color-surface);
-    background-color: var(--color-primary-dark);
-}
-
-.employees-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
 }
