@@ -1,6 +1,6 @@
-# Employee Admin Dashboard
+# 👩‍💼 Employee Admin Dashboard
 
-## Project Description
+## 📖 Project Description
 
 Employee Admin Dashboard is a web application for administrative viewing of employee information.
 
@@ -19,19 +19,41 @@ Main features:
 
 The project is developed as an educational project using HTML, CSS, and JavaScript.
 
-## Prototype
+## 🎨 Prototype
 
 Links to Figma prototypes:
 
-- Desktop version: [Untitled](https://www.figma.com/design/6Vppb7sbX3zXrpHNfjIRhN/Untitled?node-id=0-1&p=f&t=RiVgx3eQZ0gzW7Wi-0)
-- Mobile version: [Untitled](https://www.figma.com/design/6Vppb7sbX3zXrpHNfjIRhN/Untitled?node-id=9-1889&t=RiVgx3eQZ0gzW7Wi-0)
-- Wireframe: [Untitled](https://www.figma.com/design/6Vppb7sbX3zXrpHNfjIRhN/Untitled?node-id=4-430&p=f&t=RiVgx3eQZ0gzW7Wi-0)
+- Desktop version: [Desktop Prototype](https://www.figma.com/design/6Vppb7sbX3zXrpHNfjIRhN/Untitled?node-id=0-1&p=f&t=RiVgx3eQZ0gzW7Wi-0)
+- Mobile version: [Mobile Prototype](https://www.figma.com/design/6Vppb7sbX3zXrpHNfjIRhN/Untitled?node-id=9-1889&t=RiVgx3eQZ0gzW7Wi-0)
+- Wireframe: [Wireframe](https://www.figma.com/design/6Vppb7sbX3zXrpHNfjIRhN/Untitled?node-id=4-430&p=f&t=RiVgx3eQZ0gzW7Wi-0)
 
-## User Flow
+## 📸 Screenshots
+
+### 🖥️ Login Page
+
+![Login desktop](src/assets/readme/login-desktop.png)
+
+![Login mobile](src/assets/readme/login-mobile.png)
+
+### 📊 Dashboard
+
+![Dashboard desktop](src/assets/readme/dashboard.png)
+
+![Dashboard mobile](src/assets/readme/dashboard-mobile.png)
+
+### ⚠️ Login Validation Error
+
+![Login validation error](src/assets/readme/login-validation-error.png)
+
+### 🧪 Tests
+
+![Vitest test result](src/assets/readme/vitest-test.png)
+
+## 🔄 User Flow
 
 User flow diagram:
 
-![User flow diagram](src/assets/User_flow.png)
+![User flow diagram](src/assets/readme/User_flow.png)
 
 User scenario:
 
@@ -48,34 +70,34 @@ User scenario:
 11. The system clears the user session from `localStorage`.
 12. The user is redirected to the login page.
 
-## Installation and Launch
+## ⚙️ Installation and Launch
 
-### Cloning the Project
+### 📥 Cloning the Project
 
 ```bash
 git clone https://github.com/hannafr14/employee-admin-dashboard.git
 cd employee-admin-dashboard
 ```
 
-### Installing Dependencies
+### 📦 Installing Dependencies
 
 ```bash
 npm install
 ```
 
-### Starting the Project
+### 🚀 Starting the Project
 
 ```bash
 npm start
 ```
 
-### Running Tests
+### 🧪 Running Tests
 
 ```bash
 npm test
 ```
 
-## Planning
+## 🗂️ Planning
 
 A project schedule, user stories, tasks, and subtasks have been added in Jira.
 
@@ -83,33 +105,33 @@ Jira board link:
 
 - [Employee Admin Dashboard Jira board](https://hannafrolova14.atlassian.net/jira/software/projects/EAD/boards/34/backlog)
 
-## User Stories
+## 👤 User Stories
 
-### 1. Access to the Administrative Panel
+### 1. 🔐 Access to the Administrative Panel
 
 **As** an administrator  
 **I want** to access the management panel using an email and password.  
 **So that** I can manage employee information.
 
-### 2. Employee List
+### 2. 👥 Employee List
 
 **As** an authorized administrator user  
 **I want** to see a list of employees.  
 **So that** I can check their main contact details and address.
 
-### 3. Filtering Employees by the First Letter of Their Name
+### 3. 🔎 Filtering Employees by the First Letter of Their Name
 
 **As** an authorized administrator user  
 **I want** to filter the employee list by the first letter of their name.  
 **So that** I can find a specific employee faster.
 
-### 4. Logout from the Management Panel
+### 4. 🚪 Logout from the Management Panel
 
 **As** an authorized administrator user  
 **I want** to be able to log out of the system through the management panel.  
 **So that** no one else can use my open session.
 
-## Acceptance Criteria
+## ✅ Acceptance Criteria
 
 The project is considered complete if:
 
@@ -131,7 +153,7 @@ The project is considered complete if:
 - the main functions are covered by tests;
 - the project can be launched locally using the instructions from README.
 
-## Authors
+## ✍️ Authors
 
 - Author name: Hanna
 - GitHub: [hannafr14](https://github.com/hannafr14)
