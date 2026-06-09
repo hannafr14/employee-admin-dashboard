@@ -1,7 +1,9 @@
+import credentials from "../../db/credentials.json";
+
 export function checkAdminLogin(email, password) {
     try {
-        const adminEmail = import.meta.env.VITE_ADMIN_EMAIL;
-        const adminPassword = import.meta.env.VITE_ADMIN_PASSWORD;
+        const adminEmail = credentials.admin.login;
+        const adminPassword = credentials.admin.password;
 
         return email === adminEmail && password === adminPassword;
     } catch(error) {
