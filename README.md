@@ -153,6 +153,12 @@ The project is considered complete if:
 - the main functions are covered by tests;
 - the project can be launched locally using the instructions from README.
 
+## 🔐 Admin Credentials
+
+Email: admin@gmail.com
+
+Password: admin12345
+
 ## ✍️ Authors
 
 - Author name: Hanna
