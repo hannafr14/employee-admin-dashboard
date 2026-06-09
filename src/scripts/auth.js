@@ -1,7 +1,8 @@
-import credentials from "../../db/credentials.json";
-
-export function checkAdminLogin(email, password) {
+export async function checkAdminLogin(email, password) {
     try {
+        const response = await fetch("./db/credentials.json");
+        const credentials = await response.json();
+
         const adminEmail = credentials.admin.login;
         const adminPassword = credentials.admin.password;
 

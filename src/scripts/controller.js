@@ -9,7 +9,7 @@ export function initializeApp() {
     const errorMessage = document.querySelector(".error-message");
     const errorList = document.querySelector(".error-message ul");
 
-    loginForm.addEventListener("submit", function (event) {
+    loginForm.addEventListener("submit", async function (event) {
         event.preventDefault();
 
         const email = emailInput.value;
@@ -21,7 +21,7 @@ export function initializeApp() {
                 { abortEarly: false }
             );
 
-            const isValidAdmin = checkAdminLogin(email, password);
+            const isValidAdmin = await checkAdminLogin(email, password);
 
             if (isValidAdmin) {
                 localStorage.setItem("isLoggedIn", "true");
